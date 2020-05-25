@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@android:dimen/notification_large_icon_width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Enter numbers:" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <EditText
+            android:id="@+id/first_numb_et"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sec_numb_et"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/first_numb_et"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="plusClick"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="minusClick"
+            android:text="-" />
+
+
+        <Button
+            android:id="@+id/multiply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/division_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="/" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+        <TextView
+            android:id="@+id/result_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#CBD6D8D0"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="46sp" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
