@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DifferentActivity</string>
+    <string name="second_activity_called">second_activity_called</string>
+    <string name="explicit_button">explicit_button</string>
+    <string name="exp_button">explicit button</string>
+    <string name="implicit_button">implicit button</string>
+    <string name="res_act_button">res_act_button</string>
+    <string name="implicit_activity_called">implicit_activity_called</string>
+    <string name="second_activity_explicit_called">second_activity_explicit_called</string>
+    <string name="ExplicitActivity">ExplicitActivity</string>
+    <string name="ImplicitActivity">ImplicitActivity</string>
+    <string name="open_contacts">Open Contacts</string>
+    <string name="input_name">input name</string>
+    <string name="ok">ok</string>
+    <string name="your_name__is">Your name is</string>
+    <string name="name">Name</string>
+</resources>
